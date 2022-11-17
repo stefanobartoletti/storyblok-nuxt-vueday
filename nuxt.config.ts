@@ -4,10 +4,11 @@ export default defineNuxtConfig({
       [
         '@storyblok/nuxt',
         {
-                  accessToken: 'Ye2Tu63nTUUbFfxQJOPqDAtt',
-                  // If Server Location === US then:
-                  // apiOptions: { region: 'us' }
-              }
-      ]
+            accessToken: 'Ye2Tu63nTUUbFfxQJOPqDAtt',
+            // If Server Location === US then:
+            // apiOptions: { region: 'us' }
+        }
+      ],
+      '@nuxtjs/tailwindcss'
     ],
   })
