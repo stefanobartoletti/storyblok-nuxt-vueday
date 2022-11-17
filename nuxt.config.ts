@@ -9,6 +9,12 @@ export default defineNuxtConfig({
             // apiOptions: { region: 'us' }
         }
       ],
-      '@nuxtjs/tailwindcss'
+      '@nuxtjs/tailwindcss',
+      '@nuxtjs/i18n',
     ],
+    i18n: {
+      strategy: 'prefix_except_default',
+      locales: ['en', 'it'],
+      defaultLocale: 'en', // default locale
+    }
   })

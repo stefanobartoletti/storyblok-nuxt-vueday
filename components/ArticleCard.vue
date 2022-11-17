@@ -12,10 +12,12 @@
       <p class="pt-1 text-sm text-stone-600">
         {{ article.teaser }}
       </p>
-      <NuxtLink :to="'/' + slug" class="block pt-2 text-sm text-right text-pink-400 underline">Read more</NuxtLink>
+      <NuxtLink :to="localePath(`/${slug}${slug.slice(-1) !== '/' ? '/' : ''}`)" class="block pt-2 text-sm text-right text-pink-400 underline">Read more</NuxtLink>
     </article>
 </template>
 
 <script setup>
 defineProps({ article: Object, slug: String })
+
+const localePath = useLocalePath()
 </script>
