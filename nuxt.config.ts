@@ -4,7 +4,7 @@ export default defineNuxtConfig({
       [
         '@storyblok/nuxt',
         {
-            accessToken: 'Ye2Tu63nTUUbFfxQJOPqDAtt',
+            accessToken: process.env.SB_API_TOKEN,
             // If Server Location === US then:
             // apiOptions: { region: 'us' }
         }
@@ -16,5 +16,8 @@ export default defineNuxtConfig({
       strategy: 'prefix_except_default',
       locales: ['en', 'it'],
       defaultLocale: 'en', // default locale
+    },
+    generate: {
+      routes: ['/it']
     }
   })
