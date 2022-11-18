@@ -1,6 +1,7 @@
 <template>
   <div v-editable="blok" class="w-full">
-    <img v-if="optimizedImage" :src="optimizedImage" :alt="blok.image.alt" class="object-cover w-full h-32 mb-4 shadow" />
+    <img v-if="optimizedImage" :src="optimizedImage" :alt="blok.image.alt"
+      class="object-cover w-full h-32 mb-4 shadow" />
     <h3 class="text-base font-semibold text-stone-700">
       {{ blok.name }}
     </h3>

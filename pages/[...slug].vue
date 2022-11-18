@@ -1,3 +1,8 @@
+
+<template>
+  <StoryblokComponent v-if="story" :blok="story.content" />
+</template>
+
 <script setup>
 const { slug } = useRoute().params;
 const { locale } = useI18n(); // Read the locale
@@ -33,6 +38,3 @@ onMounted(() => {
 });
 </script>
  
-<template>
-  <StoryblokComponent v-if="story" :blok="story.content" />
-</template>
